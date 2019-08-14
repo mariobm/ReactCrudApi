@@ -96,7 +96,7 @@ class AddEditForm extends React.Component {
         </FormGroup>
         <FormGroup>
           <div className="custom-control custom-checkbox">
-            <Input type="checkbox" className="custom-control-input" name="stocked" id="defaultUnchecked" checked={this.state.stocked} onChange={this.onChange} value={this.state.stocked === null ? '' : this.state.stocked} />
+            <input type="checkbox" className="custom-control-input" name="stocked" id="defaultUnchecked" onChange={this.onStockChange} value={this.state.stocked === null ? '' : this.state.stocked} />
             <Label className="custom-control-label" for="defaultUnchecked">On stock</Label>
         </div>
         </FormGroup>

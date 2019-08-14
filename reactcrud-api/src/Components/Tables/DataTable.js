@@ -35,7 +35,7 @@ class DataTable extends Component {
           <td>{item.category}</td>
           <td>{item.price}</td>
           <td><div className="custom-control custom-checkbox">
-            <input type="checkbox" className="custom-control-input" name="stocked" id="defaultUnchecked" checked={item.stocked} />
+            <input type="checkbox" className="custom-control-input" name="stocked" id="defaultUnchecked" checked={item.stocked} readOnly/>
             <label className="custom-control-label" htmlFor="defaultUnchecked">{ item.stocked === true ? 'On stock' : 'Not available' }</label>
         </div></td>
           <td>
